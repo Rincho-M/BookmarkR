@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name": "BookmarkR",
+    "version": "1.0.0",
+
+    "default_locale": "en",
+    "description": "This extension helps you deal with bookmarks you want to delete soon, but keep forgetting to deal with them.",
+	"icons": 
+	{
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+
+	"browser_action":
+	{
+		"default_icon":
+		{
+			"16": "icon16.png"
+		},
+		"default_title": "Bookmarks reminder",
+		"default_popup": "popup.html"
+	},
+
+	"background":
+	{
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+
+	"permissions":
+	[
+		"bookmarks",
+		"storage",
+		"tabs"
+	],
+
+	"options_page": "options.html"
+}

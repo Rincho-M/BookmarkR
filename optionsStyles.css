@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #f8f4e6;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+}
+
+li {
+    cursor: pointer;
+    user-select: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.main {
+    max-width: 980px;
+    min-height: 580px;
+
+    margin: auto;
+    padding: 18px;
+
+    display: flex;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 20;
+}
+
+.list-div {
+    margin: 22px 0px;
+    width: 400px;
+}
+
+.menu-list {
+    margin: 0px;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.menu-list-element {
+    padding: 8px 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26pt;
+    color: #775533;
+
+    user-select: none;
+}
+
+.menu-list-element-selected {
+    background-color: white;
+
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    border-color: #663300 transparent #663300 #663300;
+    border-radius: 4px 0px 0px 4px;
+
+    font-weight: bold;
+    color: #663300;
+}
+
+.content {
+    width: 100%;
+    min-height: 360px;
+
+    margin: 12px -2px;
+
+    background-color: white;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #663300;
+    border-radius: 4px;
+
+    z-index: 1;
+}
+
+.hiddenSection {
+    display: none;
+}
+
+.optionContainer {
+    margin: 0;
+    padding: 36px 0px 0px 32px;
+
+    display: flex;
+}
+
+.optionTextbox {
+    margin: 0 10px 0 0;
+    padding: 2px 4px;
+
+    width: 24px;
+    height: 18px;
+
+    border: 1px solid #663300;
+    border-radius: 4px;
+
+    background-color: #f8f4e6;
+
+    text-align: center;
+    font-weight: bold;
+    color: #775533;
+}
+
+.optionTextbox:focus {
+    outline: none;
+}
+
+.optionText {
+    margin: 0;
+
+    display: inline-flex;
+    align-items: center;
+
+    font-size: 18px;
+    color: #663300;
+
+    user-select: none;
+}
+
+.hint {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.popupWrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.popup {
+    margin: 120% 710% 0 0;
+    padding: 18px 14px 18px 14px;
+    position: absolute;
+
+    width: 240px;
+
+    background: white;
+    border: 1px solid #663300;
+    border-radius: 6px;
+
+    box-shadow: 0 0 12px lightgray;
+}
+
+.popup::before {
+    margin: -10% 0px 0px 70%;
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+
+    transform: rotate(45deg);
+
+    background: white;
+    border-width: 1px 0px 0px 1px;
+    border-style: solid;
+    border-color: #663300;
+
+    content: "";
+}
+
+.popupText {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    color: #663300;
+
+    user-select: none;
+}
+
+.popupButton {
+    margin: 2px 0px 0px 8px;
+    padding: 0;
+
+    width: 16px;
+    height: 16px;
+
+    background: transparent url(popup_help_button.png) center center no-repeat;
+    border: none;
+
+    cursor: pointer;
+}
+
+/*.optionCheckbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.optionCheckbox+.optionCBText::before {
+    content: "";
+    display: inline-block;
+
+    width: 18px;
+    height: 17px;
+
+    margin: 0 10px 0 0;
+    padding: 0px;
+
+    border: 2px solid #663300;
+    border-radius: 4px;
+}
+
+.optionCheckbox:checked+.optionCBText::before {
+    background-image: url("checkbox.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: red;
+
+    border-color: red;
+}*/

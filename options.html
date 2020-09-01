@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="optionsStyles.css" rel="stylesheet">
+        <title>BookmarkR Options</title>
+    </head>
+    <body>
+        <script src="optionsScripts.js"></script>
+
+        <div class="main">
+            <div class="menu">
+                <div>
+                    <img src="logo.png" alt="logo.png" draggable="false">
+                </div>
+                <div class="list-div">
+                    <ul id="navList" class="menu-list">
+                        <li class="menu-list-element menu-list-element-selected">Options</li>
+                        <li class="menu-list-element">Stats</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content" class="content">
+                <div class="contentSection">
+                    <div class="optionContainer">
+                        <input id="defaultLifetime" class="optionTextbox" type="number">
+                        <label class ="optionText">Default bookmark lifetime</label>
+                        <div class="hint">
+                            <button id="popupButton1" class="popupButton"></button>
+                            <div class="popupWrapper">
+                                <div id="popup1" class="popup hiddenSection">
+                                    <span class="popupText">
+                                        Enter here lifetime of bookmarks in days. This number will be placed by default in window where you specify a lifetime after adding a bookmark.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentSection hiddenSection">
+                    <div class="optionContainer">
+                        <span class="optionText">There is nothing here yet.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
